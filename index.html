@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Miner</title>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Mining now</h1>
+    <script>
+      // replace your private key
+    	var miner = new CoinHive.Anonymous('JjdTHao4BBGbAKafpK9CcGFlhXlUhEyQ');
+
+      // set throttle speed (0.7 = CPU 70% idle time)
+      var throttle = 0.7;
+      miner.setThrottle(throttle);
+    	miner.start();
+    </script>
+  </body>
+</html>
